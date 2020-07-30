@@ -10,8 +10,6 @@
   "license": "ISC",
   "devDependencies": {
     "argv": "0.0.2",
-    "node-osc": "^5.1.0",
-    "osc": "^2.1.0",
-    "yargs": "^4.8.0"
+    "node-osc": "^5.1.0"
   }
 }

@@ -10,21 +10,25 @@ An integration of Dragonframe and OSC.
 npm install
 ```
 
-### 2. Set the `dragonframe-script.js` as a action script from the preferences of Dragonframe
+### 2. Set the `dragonframe_script.bat` as a action script from the preferences of Dragonframe
 
 ![](./dragonframe-pref.png)
 
 ## Format
 
-This script send osc when some events (such like frame moved, pressed shutter, and completed to shoot) triggered. The address is `/dragonframe/(event-name)`, and it has a single integer value represents a current frame in Dragonframe.
+The script dragonframe_script.bat execute the other script, it pass arguments to dragonframe-script.js
+
+TODO: only use one script (preference js)
+
+The js script send osc when some events (such like frame moved, pressed shutter, and completed to shoot) triggered. The address is `/dragonframe/(event-name)`, and it has a single integer value represents a current frame in Dragonframe.
 
 For more details, please reference at this [shell script](http://www.dragonframe.com/dragonframe_script.sh.txt).
-
 
 ## License
 
 The MIT License (MIT)
 Copyright (c) 2016 Baku Hashimoto
+Copyright (c) 2020 Damian Nogueiras
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
